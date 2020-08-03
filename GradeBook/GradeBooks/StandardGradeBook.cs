@@ -4,11 +4,10 @@ using System.Text;
 
 namespace GradeBook.GradeBooks
 {
-    public class StandardGradeBook
+    public class StandardGradeBook : BaseGradeBook
     {
-        public StandardGradeBook(string name)  
-        {
-
-        }
+        public string Name { get; set; }
+        public StandardGradeBook(string name)
+      
     }
 }
