@@ -20,6 +20,7 @@ namespace GradeBook.GradeBooks
         {
             Name = name;
             Students = new List<Student>();
+            bool IsWeighted;
         }
 
         public void AddStudent(Student student)
@@ -268,5 +269,9 @@ namespace GradeBook.GradeBooks
             
             return JsonConvert.DeserializeObject(json, gradebook);
         }
+    }
+
+    internal class IsWeighted
+    {
     }
 }
